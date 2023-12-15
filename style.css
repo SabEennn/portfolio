@@ -1,0 +1,171 @@
+*{
+	background-color: #0000;
+	color: #fff;
+	margin: 0;
+	font-family: sans-serif, Roboto;
+}
+
+#header{
+ height: 100vh;
+	width: 100%;
+	background-color: black;
+}
+
+.container{
+	padding: 10px 10%;
+}
+
+nav{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+
+nav ul li{
+	display: inline-block;
+	list-style: none;
+	margin: 10px 20px;
+
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 18px;
+	position: relative;
+}
+
+nav ul li a::after{
+content: '';
+width: 0;
+height: 3px;
+left: 0px;
+bottom: -6px;
+background: red;
+transition: 0.5s;
+position: absolute;
+}
+
+nav ul li a:hover::after{
+ width: 100%;
+}
+
+.header-text{
+
+	margin-top: 15%;
+	font-size: 30px;
+}
+.header-text h1{
+	font-size:60px;
+	margin-top: 20px;
+}
+.header-text h1 span{
+	color: #9a1422;
+}
+
+/* ---------about--------- */
+#about{
+	background-color: #000000;
+	padding: 80px 0px;
+	color: #ababad;
+}
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.column-1{
+	flex-basis: 35%;
+}
+
+.column-1 img{
+	width: 100%;
+	border-radius:20px;
+}
+
+.column-2{
+	flex-basis: 60%;
+}
+
+.subtitle{
+	font-size: 60px;
+	font-weight: 600px;
+	color: white;
+}
+
+.tab-titles{
+ display: flex;
+	margin: 20px 0 40px;
+}
+
+.tab-links{
+	margin-right: 50px;
+	font-size: 18px;
+	font-weight: 500;
+	cursor: pointer;
+	position: relative ;
+}
+
+.tab-links::after{
+	content: '';
+	width: 0px;
+	background: #9a1422;
+	left: 0;
+	bottom: -6px;
+
+	transition: all .3s;
+	height: 3px;
+	position: absolute;
+}
+
+.tab-links:hover::after{
+	width: 100%;
+}
+
+.tab-contents ul li{
+ margin: 20px 0px;
+	list-style: none;
+}
+
+.tab-contents ul li span{
+	color:#9a1422;
+	font-size: 14px;
+}
+
+#services{
+	background-color: #000000;
+	padding: 30px 0;
+	margin-top: 0;
+}
+
+.service-lists{
+	display: flex;
+	justify-content: space-around;
+	gap: 20px;
+ word-break: break-all;
+
+}
+
+.service-lists a:hover
+{
+	 color: #9a1422;
+}
+
+#services h2{
+	color: #9a1422;
+	text-align: center;
+}
+ 
+
+.tab-inner-content{
+	display: flex;
+	gap: 50px;
+}
+
+.service-lists p{
+	padding: 10px,10px;
+}
