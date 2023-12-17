@@ -3,22 +3,32 @@ const experience = document.getElementById("exp")
 const education = document.getElementById("edu")
 const tapChange= (ids)=>{
 	 if( ids === `skills`){
-			skill.style.display = `block`;
-			experience.style.display = `none`; 
-			education.style.display = `none`; 	
+			skill.style.opacity = `1`;
+			experience.style.opacity = `0`; 
+			education.style.opacity = `0`; 	
+			skill.style.visibility = `visible`;
+			experience.style.visibility = `hidden`; 
+			education.style.visibility = `hidden`; 	
 			
 		}
 	 else if( ids === `exp`){
-			experience.style.display = `block`;
-			skill.style.display = `none`; 
-			education.style.display = `none`; 
+			experience.style.opacity = `1`;
+			skill.style.opacity = `0`; 
+			education.style.opacity = `0`; 
+			skill.style.visibility = `hidden`;
+			experience.style.visibility = `visible`; 
+			education.style.visibility = `hidden`; 	
 
 		}
 	 else if( ids === `edu`){
-			education.style.display = `block`;
-			experience.style.display = `none`; 
-			skill.style.display = `none`; 
+			education.style.opacity = `1`;
+			experience.style.opacity = `0`; 
+			skill.style.opacity = `0`; 
+			skill.style.visibility = `hidden`;
+			experience.style.visibility = `hidden`; 
+			education.style.visibility = `visible`; 	
 
 		}
 
 }
+

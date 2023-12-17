@@ -1,59 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>Portfolio</title>
-  </head>
-  <body------------>
-    <div id="header">
-      <div class="container">
-        <nav>
-          <!-- <img src="images/logo.gif" class="image" /> -->
-          <h1 style="text-shadow: #fc0 1px 0 10px;">DIBESH</h1>
-          <ul>
-            <li><a href="#">home</a></li>
-            <li><a href="#">about</a></li>
-            <li><a href="#">contact</a></li>
-            <li><a href="#">portfolio</a></li>
-            <li><a href="#">services</a></li>
-          </ul>
-        </nav>
-        <div class="header-text">
-          <p>UI/UX designer</p>
-          <h1>
-            Hi, I am <span>Dibesh </span><br />
-            I make beautiful websites!
-          </h1>
-        </div>
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Portfolio</title>
+</head>
+<body------------>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <!-- <img src="images/logo.gif" class="image" /> -->
+        <h1 style="letter-spacing: 0px;font-size: 2rem;color: #9a1422;">
+
+          <span style="color: #fff; ">di</span>BESH
+        </h1>
+        <ul>
+          <li><a href="#">home</a></li>
+          <li><a href="#">about</a></li>
+          <li><a href="#">contact</a></li>
+          <li><a href="#">portfolio</a></li>
+          <li><a href="#">services</a></li>
+        </ul>
+      </nav>
+      <div class="header-text">
+        <p>UI/UX designer</p>
+        <h1>
+          Hi, I am <span>Dibesh </span><br />
+          I make beautiful websites!
+        </h1>
       </div>
     </div>
+  </div>
 
-    <div id="about">
-      <div class="container">
-        <div class="row">
-          <div class="column-1">
-            <img src="images/user.png" />
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="column-1">
+          <img  width="300" src="images/photo1.png" />
+        </div>
+        <div class="column-2">
+          <h1 class="subtitle">About Me</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+            modi dolorum, quos sint corrupti velit molestias sequi! Illum quam
+            facere reprehenderit quae! Odio beatae nisi, nesciunt rem autem
+            tempora animi.
+          </p>
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="tapChange(`skills`)">Skills</p>
+            <p class="tab-links" onclick="tapChange(`exp`)">Experience</p>
+            <p class="tab-links" onclick="tapChange(`edu`)">Education</p>
           </div>
-          <div class="column-2">
-            <h1 class="subtitle">About Me</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-              modi dolorum, quos sint corrupti velit molestias sequi! Illum quam
-              facere reprehenderit quae! Odio beatae nisi, nesciunt rem autem
-              tempora animi.
-            </p>
 
-            <div class="tab-titles">
-              <p class="tab-links active-link" onclick="tapChange(`skills`)" >Skills</p>
-              <p class="tab-links" onclick="tapChange(`exp`)">Experience</p>
-              <p class="tab-links"onclick="tapChange(`edu`)">Education</p>
-            </div>
+          <div class="tab-content">
             <div class="tab-contents" id="skills" style="display: block">
               <ul class="tab-inner-content">
                 <li><span>UI/UX</span> <br />Sites Designing</li>
@@ -61,14 +64,14 @@
                 <li><span>App Dev</span> <br />App Development</li>
               </ul>
             </div>
-            <div class="tab-contents" id="exp" style="display: none">
+            <div class="tab-contents" id="exp" style="opacity: 0;visibility: hidden;">
               <ul class="tab-inner-content">
                 <li><span>UI/UX</span> <br />hackathon1</li>
                 <li><span>Web Dev</span> <br />hackathon2</li>
                 <li><span>App Dev</span> <br />hackathon3</li>
               </ul>
             </div>
-            <div class="tab-contents" id="edu" style="display: none;">
+            <div class="tab-contents" id="edu" style="opacity: 0;visibility: hidden;">
               <ul class="tab-inner-content">
                 <li><span>Primay</span> <br />DEBHISS</li>
                 <li><span>Secondary</span> <br />Everest S.E.B.S</li>
@@ -79,6 +82,7 @@
         </div>
       </div>
     </div>
+  </div>
 
 
 
@@ -86,24 +90,25 @@
   <div id="services">
     <div class="container">
       <div class="service-lists">
-         <div>
+        <div class="content">
           <h2>Web Design</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque ullam assumenda delectus </p>
           <a href="#" s>Learn More.</a>
-         </div>
-         <div>
+        </div>
+        <div class="content">
           <h2>Web Development</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque ullam assumenda delectus nesciunt aut, </p>
           <a href="#" s>Learn More.</a>
-         </div>
-         <div>
+        </div>
+        <div class="content">
           <h2>Game Development</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque ullam assumenda delectus nesciunt auts</p>
           <a href="#" s>Learn More.</a>
-         </div>
+        </div>
       </div>
     </div>
   </div>
   </body>
-<script src="./script.js"></script>
+  <script src="./script.js"></script>
+
 </html>

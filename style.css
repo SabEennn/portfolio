@@ -1,3 +1,4 @@
+
 *{
 	background-color: #0000;
 	color: #fff;
@@ -85,12 +86,14 @@ nav ul li a:hover::after{
 .column-1 img{
 	width: 100%;
 	border-radius:20px;
+	border-radius:90% 10% 76% 24% / 16% 19% 81% 84% ;
+	box-shadow: #9a1422  50px 10px 100px 2px ;
 }
 
 .column-2{
-	flex-basis: 60%;
+	flex-basis: 50%;
 }
-
+n
 .subtitle{
 	font-size: 60px;
 	font-weight: 600px;
@@ -125,7 +128,13 @@ nav ul li a:hover::after{
 .tab-links:hover::after{
 	width: 100%;
 }
-
+.tab-content{
+   position:  relative;
+}
+.tab-contents{
+	position: absolute ;
+	transition: opacity 1s;
+}
 .tab-contents ul li{
  margin: 20px 0px;
 	list-style: none;
@@ -145,9 +154,27 @@ nav ul li a:hover::after{
 .service-lists{
 	display: flex;
 	justify-content: space-around;
-	gap: 20px;
+	gap: 60px;
  word-break: break-all;
+}
 
+.service-lists p {
+	margin-top:15px ;
+	color: #373737;
+}
+
+.service-lists a{
+	margin-top: 10px;
+	text-decoration: none;
+	color:#373737 ;
+}
+
+.content{
+
+	border-radius: 15px;
+	padding: 20px;
+	background: #c8c8c8 ;
+	
 }
 
 .service-lists a:hover
@@ -169,3 +196,4 @@ nav ul li a:hover::after{
 .service-lists p{
 	padding: 10px,10px;
 }
+
