@@ -345,7 +345,7 @@ margin-bottom: 30px;
 }
 
 .socials{
-	margin-bottom: 30px;
+	margin-bottom: 40px;
 	width: 120px;
 	display: flex;
 	justify-content: space-between;
@@ -357,7 +357,10 @@ margin-bottom: 30px;
 
 .cv{
 	margin-bottom: 30px;
-
+}
+.cv a{
+	padding: 15px;
+	text-decoration: none;
 }
 .cv-botton{
 	padding: 10px;
@@ -365,3 +368,25 @@ margin-bottom: 30px;
 	width: 150px;
 	border-radius: 7px;
 }
+
+.container{
+	display: flex;
+	justify-content: space-around;
+}
+
+
+.input-name{
+	margin-top: 100px;
+}
+.input-name, .input-email, .message {
+ display: block;	
+	margin-bottom: 50px;
+	border: none;
+	background-color: #3b3b3b;
+	width: 400px;
+	height: 40px;
+	border-radius: 5px;
+}
+
+
+
