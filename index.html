@@ -6,6 +6,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/ccc97fc384.js" crossorigin="anonymous"></script>
   <title>Portfolio</title>
 </head>
 <body------------>
@@ -20,9 +21,9 @@
         <ul>
           <li><a href="#">home</a></li>
           <li><a href="#">about</a></li>
-          <li><a href="#">contact</a></li>
-          <li><a href="#">portfolio</a></li>
           <li><a href="#">services</a></li>
+          <li><a href="#">portfolio</a></li>
+          <li><a href="#">contact</a></li>
         </ul>
       </nav>
       <div class="header-text">
@@ -35,15 +36,16 @@
     </div>
   </div>
 
+  <!---------------------About Me------------------------->
   <div id="about">
     <div class="container">
       <div class="row">
         <div class="column-1">
-          <img  width="300" src="images/photo1.png" />
+          <img class="profile" src="images/photo2.png" alt="Profile Photo" />
         </div>
         <div class="column-2">
           <h1 class="subtitle">About Me</h1>
-          <p>
+          <p class="about-me-para">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
             modi dolorum, quos sint corrupti velit molestias sequi! Illum quam
             facere reprehenderit quae! Odio beatae nisi, nesciunt rem autem
@@ -51,31 +53,31 @@
           </p>
 
           <div class="tab-titles">
-            <p class="tab-links active-link" onclick="tapChange(`skills`)">Skills</p>
-            <p class="tab-links" onclick="tapChange(`exp`)">Experience</p>
-            <p class="tab-links" onclick="tapChange(`edu`)">Education</p>
+            <p class="tab-links active-link" onclick="tapChange('skills')">Skills</p>
+            <p class="tab-links" onclick="tapChange('exp')">Experience</p>
+            <p class="tab-links" onclick="tapChange('edu')">Education</p>
           </div>
 
           <div class="tab-content">
-            <div class="tab-contents" id="skills" style="display: block">
+            <div class="tab-contents" id="skills">
               <ul class="tab-inner-content">
-                <li><span>UI/UX</span> <br />Sites Designing</li>
-                <li><span>Web Dev</span> <br />Building the design</li>
-                <li><span>App Dev</span> <br />App Development</li>
+                <li><span class="title">UI/UX</span><br />Sites Designing</li>
+                <li><span class="title">Web Dev</span><br />Building the design</li>
+                <li><span class="title">App Dev</span><br />App Development</li>
               </ul>
             </div>
-            <div class="tab-contents" id="exp" style="opacity: 0;visibility: hidden;">
+            <div class="tab-contents" id="exp" style="opacity: 0; visibility: hidden;">
               <ul class="tab-inner-content">
-                <li><span>UI/UX</span> <br />hackathon1</li>
-                <li><span>Web Dev</span> <br />hackathon2</li>
-                <li><span>App Dev</span> <br />hackathon3</li>
+                <li><span class="title">UI/UX</span><br />hackathon1</li>
+                <li><span class="title">Web Dev</span><br />hackathon2</li>
+                <li><span class="title">App Dev</span><br />hackathon3</li>
               </ul>
             </div>
-            <div class="tab-contents" id="edu" style="opacity: 0;visibility: hidden;">
+            <div class="tab-contents" id="edu" style="opacity: 0; visibility: hidden;">
               <ul class="tab-inner-content">
-                <li><span>Primay</span> <br />DEBHISS</li>
-                <li><span>Secondary</span> <br />Everest S.E.B.S</li>
-                <li><span>Higher</span> <br />PNC-CSIT</li>
+                <li><span class="title"> Primary</span><br /> Bhupu Shainik, Chirag , DEBHISS</li>
+                <li><span class="title">Secondary</span><br />Everest E.B.S.S</li>
+                <li><span class="title">Higher</span><br />PNC-CSIT</li>
               </ul>
             </div>
           </div>
@@ -83,31 +85,114 @@
       </div>
     </div>
   </div>
+
 
 
 
   <!-- ------------ my services -----------s-->
   <div id="services">
+    <h1 class="subtitle">My Services</h1>
     <div class="container">
       <div class="service-lists">
         <div class="content">
           <h2>Web Design</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque ullam assumenda delectus </p>
-          <a href="#" s>Learn More.</a>
+          <div class="hover-ko-lagi">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque ullam assumenda delectus </p>
+            <a class="more" href="#">Learn More.</a>
+          </div>
         </div>
         <div class="content">
+
           <h2>Web Development</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque ullam assumenda delectus nesciunt aut, </p>
-          <a href="#" s>Learn More.</a>
+          <div class="hover-ko-lagi">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque ullam assumenda delectus nesciunt aut,
+            </p>
+            <a class="more" href="#">Learn More.</a>
+          </div>
+
         </div>
         <div class="content">
           <h2>Game Development</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque ullam assumenda delectus nesciunt auts</p>
-          <a href="#" s>Learn More.</a>
+          <div class="hover-ko-lagi">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque ullam assumenda delectus nesciunt auts
+            </p>
+            <a class="more" href="#">Learn More.</a>
+          </div>
+
         </div>
       </div>
     </div>
   </div>
+
+
+  <!-- --------------------Portfolio---------------------- -->
+  <div class="port-main">
+    <div class="port-container">
+      <div class="row-1">
+        <h1 class="subtitle">Portfolio</h1>
+      </div>
+      <div class="row-2">
+        <div class="port-content">
+          <img src="images/work-1.png" alt="image 1">
+          <div class="layer">
+            <h3>Social Media App</h3>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <a href=""><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+        <div class="port-content">
+          <img src="images/work-2.png" alt="image 2">
+          <div class="layer">
+            <h3>Music App</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum, in</p>
+            <a href=""><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+        <div class="port-content">
+          <img src="images/work-3.png" alt="image 3">
+          <div class="layer">
+            <h3>Online Shopping App</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum, in</p>
+            <a href=""><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- ---------------------contact me--------------- -->
+  <div class="cont-main">
+    <div class="container">
+      <div class="contact-left">
+        <h1 class="cont-h1">Contact Me</h1>
+        <div class="innerdiv">
+          <div class="email">
+            <i class="fa-solid fa-envelope"></i>
+            <span style="padding-left: 15px;">sabinp7278@gmail.com</span>
+          </div>
+          <div class="number">
+            <i class="fa-solid fa-phone"></i> <span style="padding-left: 15px;">+9779849481842</span>
+          </div>
+          <div class="socials">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-github"></i>
+          </div>
+          <div class="cv">
+            <button class="cv-botton">Download CV</button>
+          </div>
+        </div>
+      </div>
+      <div class="contact-right">
+        <input class="input-name" type="text">
+        <input class="input-email"  type="text">
+        <input class="message"  type="text">
+      </div>
+    </div>
+  </div>
+
   </body>
   <script src="./script.js"></script>
 

@@ -4,6 +4,8 @@
 	color: #fff;
 	margin: 0;
 	font-family: sans-serif, Roboto;
+ margin-top:0;
+	margin-bottom: 0;
 }
 
 #header{
@@ -67,9 +69,10 @@ nav ul li a:hover::after{
 }
 
 /* ---------about--------- */
+
 #about{
 	background-color: #000000;
-	padding: 80px 0px;
+	padding: 2% 0px;
 	color: #ababad;
 }
 
@@ -79,23 +82,30 @@ nav ul li a:hover::after{
 	justify-content: space-between;
 }
 
-.column-1{
+
+.column-1 {
 	flex-basis: 35%;
+border-radius: 5000px;
+	background-color: #9a1422;
+	border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+	overflow: hidden;
+	/* box-shadow: #9a1422  0px 0px 2px 100px ;  */
 }
 
-.column-1 img{
-	width: 100%;
-	border-radius:20px;
-	border-radius:90% 10% 76% 24% / 16% 19% 81% 84% ;
-	box-shadow: #9a1422  50px 10px 100px 2px ;
-}
 
 .column-2{
 	flex-basis: 50%;
 }
-n
-.subtitle{
-	font-size: 60px;
+
+.about-me-para{
+	font-size: 18px;
+	padding-bottom: 50px;
+}
+.subtitle {
+	text-align: center;
+	padding: 25px;
+	margin-bottom: 40px;
+	font-size: 50px;
 	font-weight: 600px;
 	color: white;
 }
@@ -106,9 +116,10 @@ n
 }
 
 .tab-links{
+	margin-top: 20px;
 	margin-right: 50px;
-	font-size: 18px;
-	font-weight: 500;
+	font-size: 30px;
+	font-weight: 600;
 	cursor: pointer;
 	position: relative ;
 }
@@ -119,7 +130,6 @@ n
 	background: #9a1422;
 	left: 0;
 	bottom: -6px;
-
 	transition: all .3s;
 	height: 3px;
 	position: absolute;
@@ -132,9 +142,13 @@ n
    position:  relative;
 }
 .tab-contents{
+	display: flex;
+	font-size: 18px;
 	position: absolute ;
 	transition: opacity 1s;
 }
+
+
 .tab-contents ul li{
  margin: 20px 0px;
 	list-style: none;
@@ -142,12 +156,31 @@ n
 
 .tab-contents ul li span{
 	color:#9a1422;
-	font-size: 14px;
+	font-size: 20px;
+	font-weight: 600;
 }
 
-#services{
+.tab-inner-content{
+	/* border: 1px solid #9a1422; */
+	margin-left: -20px;
+	border:none;
+	border-radius: 20px;
+	box-shadow: 0 0 0px 5px #9a1422;
+	padding-right: 20px;
+}
+
+
+      /* ---------------My Services---------------- */
+
+	.head{
+		font-size: 50px;
+		text-align: center;
+		margin-bottom: 40px;
+	}
+
+	#services{
 	background-color: #000000;
-	padding: 30px 0;
+	padding: 30vh 0;
 	margin-top: 0;
 }
 
@@ -161,39 +194,174 @@ n
 .service-lists p {
 	margin-top:15px ;
 	color: #373737;
+	padding: 10px,10px;
+	color: white;
 }
 
-.service-lists a{
-	margin-top: 10px;
+.content:hover{
+	background-color:#706b6b ;
+	color: #373737 ;
+}
+
+.hover-ko-lagi{
+	color: white;
+}
+
+.hover-ko-lagi:hover{
+	color: #373737;
+}
+.more{
+	display: inline-block;
+	margin-top: 15px;
 	text-decoration: none;
-	color:#373737 ;
 }
 
 .content{
-
+	height: 150px;
 	border-radius: 15px;
 	padding: 20px;
-	background: #c8c8c8 ;
-	
+	background: #1f1f1f;
+	font-weight: 600;
 }
 
-.service-lists a:hover
+/* .service-lists a:hover
 {
 	 color: #9a1422;
-}
+} */
 
 #services h2{
 	color: #9a1422;
 	text-align: center;
 }
+
  
+#services h2:hover{
+	text-shadow: 1px 1px 4px  #ce9178;
+}
 
 .tab-inner-content{
 	display: flex;
 	gap: 50px;
 }
 
-.service-lists p{
-	padding: 10px,10px;
+
+/* ----------------------PortFolio------------------------- */
+.port-main{
+	background-color:	black;
+	height: 110vh;
+	padding-bottom:50px ;
 }
 
+.row-2{
+	height:80vh	;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	overflow: hidden;
+}
+
+.row-2 img{
+	 max-width: 100%;
+		height: auto;
+		margin: 0;
+		border-radius: 15px;
+}
+
+.port-content{
+	/* background-color: #9a1422; */
+	height: 400px;
+	width: 300px;
+	position: relative;
+}
+
+.layer{
+ display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+	background: linear-gradient(rgba(0,0,0,0.6), #9a1422);
+	overflow: hidden;
+	left: 0;
+	bottom: 0;
+ padding: 0, 40px;
+	text-align: center;
+	position: absolute;
+	font-size: 18px;
+}
+
+.layer h3{
+	font-weight: 700;
+	margin-bottom: 15px;
+}
+
+.layer a{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+	text-decoration: none;
+	margin-top: 20px;
+	color:#9a1422;
+	background: white;
+	text-align: center;
+	font-size: 18px;
+	border-radius: 30px;
+	height: 60px;
+	width: 60px;
+	
+}
+.layer i{
+	color: #9a1422;
+}
+
+
+/* ------------------Contact Me------------------------- */
+
+.cont-main{
+	background-color: #000000;
+	height: 80vh;
+}
+
+.cont-h1{
+	padding: 5px;
+	margin-bottom: 40px;
+	font-size: 50px;
+	font-weight: 600px;
+	color: white;
+}
+
+.innerdiv{
+	padding: 20px;
+}
+
+.number{
+margin-bottom: 30px;
+}
+
+.email{
+	margin-bottom: 30px;
+}
+
+.socials{
+	margin-bottom: 30px;
+	width: 120px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.socials i{
+	font-size: 25px;
+}
+
+.cv{
+	margin-bottom: 30px;
+
+}
+.cv-botton{
+	padding: 10px;
+	background-color: #9a1422;
+	width: 150px;
+	border-radius: 7px;
+}
