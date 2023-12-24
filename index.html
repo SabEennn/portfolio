@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+  <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet" />
@@ -9,9 +11,9 @@
   <script src="https://kit.fontawesome.com/ccc97fc384.js" crossorigin="anonymous"></script>
   <title>Portfolio</title>
 </head>
-<body------------>
-  <div id="header">
-    <div class="container">
+<body>
+  <div class="header container">
+    <div class="container-header">
       <nav>
         <!-- <img src="images/logo.gif" class="image" /> -->
         <h1 style="letter-spacing: 0px;font-size: 2rem;color: #9a1422;">
@@ -29,7 +31,7 @@
       <div class="header-text">
         <p>UI/UX designer</p>
         <h1>
-          Hi, I am <span>Dibesh </span><br />
+          Hi, I am <span>Dibesh, </span><br />
           I make beautiful websites!
         </h1>
       </div>
@@ -37,11 +39,11 @@
   </div>
 
   <!---------------------About Me------------------------->
-  <div id="about">
-    <div class="container">
+  <div class="about container">
+
       <div class="row">
         <div class="column-1">
-          <img class="profile" src="images/photo2.png" alt="Profile Photo" />
+          <img class="profile" src="images/photo.png" alt="Profile Photo" />
         </div>
         <div class="column-2">
           <h1 class="subtitle">About Me</h1>
@@ -50,17 +52,20 @@
             modi dolorum, quos sint corrupti velit molestias sequi! Illum quam
             facere reprehenderit quae! Odio beatae nisi, nesciunt rem autem
             tempora animi.
-          </p>
 
+          <section class="tab">
           <div class="tab-titles">
-            <p class="tab-links active-link" onclick="tapChange('skills')">Skills</p>
-            <p class="tab-links" onclick="tapChange('exp')">Experience</p>
-            <p class="tab-links" onclick="tapChange('edu')">Education</p>
+            
+              <li class="tab-links active-link" onclick="tapChange('skills')">Skills</li>
+             <li class="tab-links" onclick="tapChange('exp')">Experience</li> 
+             <li class="tab-links" onclick="tapChange('edu')">Education</li> 
+          
           </div>
 
           <div class="tab-content">
             <div class="tab-contents" id="skills">
               <ul class="tab-inner-content">
+                <tr>
                 <li><span class="title">UI/UX</span><br />Sites Designing</li>
                 <li><span class="title">Web Dev</span><br />Building the design</li>
                 <li><span class="title">App Dev</span><br />App Development</li>
@@ -81,18 +86,21 @@
               </ul>
             </div>
           </div>
+        </section>  
+
+      
         </div>
       </div>
-    </div>
+    
   </div>
 
 
 
 
   <!-- ------------ my services -----------s-->
-  <div id="services">
+  <div class="services container">
     <h1 class="subtitle">My Services</h1>
-    <div class="container">
+    <div class="container-services">
       <div class="service-lists">
         <div class="content">
           <h2>Web Design</h2>
@@ -126,7 +134,7 @@
 
 
   <!-- --------------------Portfolio---------------------- -->
-  <div class="port-main">
+  <div class="port-main container">
     <div class="port-container">
       <div class="row-1">
         <h1 class="subtitle">Portfolio</h1>
@@ -163,8 +171,8 @@
 
 
   <!-- ---------------------contact me--------------- -->
-  <div class="cont-main">
-    <div class="container">
+  <div class="cont-main container">
+    <div class="container-contact">
       <div class="contact-left">
         <h1 class="cont-h1">Contact Me</h1>
         <div class="innerdiv">
@@ -186,13 +194,37 @@
         </div>
       </div>
       <div class="contact-right">
-        <input class="input-name" type="text">
-        <input class="input-email"  type="text">
-        <input class="message"  type="text">
+        <form>
+        <input class="input-name" type="text" placeholder="Your Name">
+        <input class="input-email"  type="email" placeholder="Your Email">
+        <textarea name="message" class="message" cols="47" placeholder="Enter Message"></textarea>
+        <button class="submit-button" type="submit">Submit</button>
+      </form>
       </div>
     </div>
   </div>
 
+
+
+  <!-- ----------------footer----------------------- -->
+
+
+<section class="footer">
+  <div class="footer-socials">
+    <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-github"></i>
+    <i class="fa-brands fa-linkedin"></i>
+    <i class="fa-brands fa-x-twitter"></i>
+  </div>
+
+  <div class="foot-nav">
+          <li><a href="#">about</a></li>
+          <li><a href="#">services</a></li>
+          <li><a href="#">portfolio</a></li>
+  </div>
+</section>
+ 
   </body>
   <script src="./script.js"></script>
 
