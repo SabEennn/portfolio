@@ -14,7 +14,16 @@
 <body>
   <div class="header container">
     <div class="container-header">
-      <nav>
+      <nav  class="mobile-toggle"  id="mobile-toggle">
+        <ul>
+          <li><a href="#">home</a></li>
+          <li><a href="#">about</a></li>
+          <li><a href="#">services</a></li>
+          <li><a href="#">portfolio</a></li>
+          <li><a href="#">contact</a></li>
+      </ul>
+     </nav>
+      <nav class="large-nav">
         <!-- <img src="images/logo.gif" class="image" /> -->
         <h1 style="letter-spacing: 0px;font-size: 2rem;color: #9a1422;">
 
@@ -27,6 +36,7 @@
           <li><a href="#">portfolio</a></li>
           <li><a href="#">contact</a></li>
         </ul>
+        <span onclick="toggle()" class="hambar"> <i class="fa-solid fa-bars"></i> </span>
       </nav>
       <div class="header-text">
         <p>UI/UX designer</p>
@@ -193,7 +203,7 @@
           </div>
         </div>
       </div>
-      <div class="contact-right">
+      <div class="contact-right" autocomplete="off">
         <form>
         <input class="input-name" type="text" placeholder="Your Name">
         <input class="input-email"  type="email" placeholder="Your Email">

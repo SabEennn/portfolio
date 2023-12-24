@@ -15,7 +15,7 @@ body{
 	
 }
 
-nav{
+.large-nav{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -24,27 +24,75 @@ nav{
 
 
 
-nav ul{
+.large-nav ul{
 	display: flex;
 	list-style: none;
 	gap: 50px;
 	padding: 10px;
 }
 
-@media screen and (max-width:600px) {
-	 nav ul{
-			display: none;
-		}
+.hambar{
+	display: none;
+} 
+
+.mobile-toggle{
+	display: none;
 }
 
-nav ul li a{
+@media screen and (max-width:600px) {
+	 .large-nav ul{
+			display: none;
+		}
+  .hambar{
+			display: block;
+			z-index: 2;
+		}
+		
+		.mobile-toggle{  
+			display: flex;
+			flex-direction: column;
+			background:black;
+			height: 100vh;
+			position: absolute;
+			right:0px;
+			width: 50%;
+			color: #9a1422;
+			list-style: none;
+			align-items: center;
+	 	left: 450px;
+			transition: left 0.5s;
+			border-radius: 10px;
+		
+		}
+ 
+		.mobile-toggle ul{
+			display: flex;
+			margin-top:20vh ;
+			flex-direction: column;
+			list-style: none;
+			
+		}
+
+		.mobile-toggle ul li{
+			padding: 20px
+		}
+
+		.mobile-toggle a{
+			text-decoration: none;
+		}
+
+ 
+}
+
+
+.large-nav ul li a{
 	text-decoration: none;
 	color: #fff;
 	font-size: 18px;
 	position: relative;
 }
 
-nav ul li a::after{
+.large-nav ul li a::after{
 content: '';
 width: 0;
 height: 3px;
@@ -55,16 +103,16 @@ transition: 0.5s;
 position: absolute;
 }
 
-nav ul li a:hover::after{
+.large-nav ul li a:hover::after{
  width: 100%;
 }
 .header{
 	height: 100vh;
 }
 
-@media   (max-width: 600px) {
+@media  screen and (max-width: 600px) {
 	.header{
-		height: 50vh;
+		height: 10vh;
 	}
 }
 
@@ -537,6 +585,10 @@ input:focus ,textarea:focus{
 
 .footer a{
 	text-decoration: none;
+}
+
+.input-name, .input-email, .message{
+	width: 300px;
 }
 
 .foot-nav{

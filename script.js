@@ -32,3 +32,16 @@ const tapChange= (ids)=>{
 
 }
 
+var value=1
+const tog = document.getElementById("mobile-toggle")
+const toggle = () => {
+	if(value === 1){ 
+tog.style.left=" 214px";
+value = 0;
+	}
+
+	else{ 
+		tog.style.left="450px";
+		value = 1;
+	}
+}
