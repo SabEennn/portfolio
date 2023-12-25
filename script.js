@@ -32,16 +32,39 @@ const tapChange= (ids)=>{
 
 }
 
+const wrapper = 	document.getElementById("wrapper");
 var value=1
 const tog = document.getElementById("mobile-toggle")
 const toggle = () => {
 	if(value === 1){ 
-tog.style.left=" 214px";
-value = 0;
+ show()
+	wrapper.style.opacity=".3"
 	}
 
 	else{ 
-		tog.style.left="450px";
-		value = 1;
+	hide()
+wrapper.style.opacity="0"
 	}
 }
+
+
+
+document.getElementById("wrapper").addEventListener("click", hide);
+window.addEventListener("scroll", hide)	;
+
+
+
+function hide(){
+
+	tog.style.left="450px";
+	value = 1;
+
+} 
+function show(){
+
+	tog.style.left="214px";
+	value = 0;
+
+} 
+
+
