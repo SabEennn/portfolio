@@ -68,3 +68,19 @@ function show(){
 } 
 
 
+ fetch(`https://type.fit/api/quotes`)
+.then((r)=> r.json())
+.then ((j)=>{
+
+	const short = document.getElementById("quote")
+	console.log(Math.floor(Math.random()*j.length));
+	const randomNumber = Math.floor(Math.random()*j.length)
+console.log(j[randomNumber].text);
+var varForQuote=j[randomNumber].text
+ 
+document.getElementById("quote").innerHTML = '"  ' +varForQuote+ '  "';
+short.style.fontFamily = "Space Grotesk"; 
+short.style.color= "#757575";
+short.style.fontWeight="100"
+
+})

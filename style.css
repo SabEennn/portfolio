@@ -1,4 +1,7 @@
 
+ @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:wght@100&family=Space+Grotesk&display=swap');
+
+
 *{
 	background-color: #0000;
 	color: #fff;
@@ -342,6 +345,7 @@ margin: 10px 5%;
 
 .hover-ko-lagi{
 	color: white;
+	word-break: keep-all;
 }
 
 .hover-ko-lagi:hover{
@@ -607,4 +611,18 @@ input:focus ,textarea:focus{
 	display: flex;
 	justify-content: space-between;
 }
+}
+
+
+.apiWrap
+{
+	font-style: italic;
+	font-size: 22px;
+	font-family: 'Space Grotesk', sans-serif;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #ffffff7c;
+	margin: 5rem;
 }
