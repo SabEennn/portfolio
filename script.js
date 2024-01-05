@@ -67,10 +67,18 @@ function show(){
 
 } 
 
+// fetching the API
+fetch(`https://type.fit/api/quotes`)
+.then(()=>{
+	
+})
 
- fetch(`https://type.fit/api/quotes`)
-.then((r)=> r.json())
-.then ((j)=>{
+.then(()=>{ 
+
+//  fetch(`https://type.fit/api/quotes`)
+// .then((r)=> r.json())
+// .then ((j)=>{
+	
 
 	const short = document.getElementById("quote")
 	console.log(Math.floor(Math.random()*j.length));
