@@ -1,61 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <link rel="stylesheet" href="style.css" />
-  <script src="https://kit.fontawesome.com/ccc97fc384.js" crossorigin="anonymous"></script>
-  <title>Portfolio</title>
-</head>
-<body >
-  <div id="wrapper"></div>
-  <div  class="header container">
-    <div class="container-header">
-      <nav  class="mobile-toggle"  id="mobile-toggle">
-        <ul>
-          <li><a href="#header">home</a></li>
-          <li><a href="#about">about</a></li>
-          <li><a href="#services">services</a></li>
-          <li><a href="#portfolio">portfolio</a></li>
-          <li><a href="#contact">contact</a></li>
-      </ul>
-     </nav>
-      <nav class="large-nav">
-        <!-- <img src="images/logo.gif" class="image" /> -->
-        <h1 style="letter-spacing: 0px;font-size: 2rem;color: #9a1422;">
-
-          <span style="color: #fff; ">di</span>BESH
-        </h1>
-        <ul>
-          <li><a href="#home">home</a></li>
-          <li><a href="#about">about</a></li>
-          <li><a href="#services">services</a></li>
-          <li><a href="#portfolio">portfolio</a></li>
-          <li><a href="#contact">contact</a></li>
-        </ul>
-        <span onclick="toggle()" class="hambar"> <i class="fa-solid fa-bars"></i> </span>
-      </nav>
-      <div class="header-text">
-        <p>UI/UX designer</p>
-        <!-- <h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/ccc97fc384.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <div id="wrapper"></div>
+    <div class="header container">
+      <div class="container-header">
+        <nav class="mobile-toggle" id="mobile-toggle">
+          <ul>
+            <li><a href="#header">home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#services">services</a></li>
+            <li><a href="#portfolio">portfolio</a></li>
+            <li><a href="#contact">contact</a></li>
+          </ul>
+        </nav>
+        <nav class="large-nav">
+          <!-- <img src="images/logo.gif" class="image" /> -->
+          <h1 style="letter-spacing: 0px; font-size: 2rem; color: #9a1422">
+            <span style="color: #fff">di</span>BESH
+          </h1>
+          <ul>
+            <li><a href="#home">home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#services">services</a></li>
+            <li><a href="#portfolio">portfolio</a></li>
+            <li><a href="#contact">contact</a></li>
+          </ul>
+          <span onclick="toggle()" class="hambar">
+            <i class="fa-solid fa-bars"></i>
+          </span>
+        </nav>
+        <div class="header-text">
+          <p>UI/UX designer</p>
+          <!-- <h1>
           Hi, I am <span>Dibesh, </span><br />
           I make beautiful websites!
         </h1> -->
-        <h1>
-          Hi, I am <span>Dibesh, </span><br /> Welcome to my portfolio. I craft visually captivating websites .
-        </h1>
+          <h1>
+            Hi, I am <span>Dibesh, </span><br />
+            Welcome to my portfolio. I craft visually captivating websites .
+          </h1>
+        </div>
       </div>
     </div>
-  </div>
 
-  <!---------------------About Me------------------------->
-  <div id="about" class="about container">
-
+    <!---------------------About Me------------------------->
+    <div id="about" class="about container">
       <div class="row">
         <div class="column-1">
           <img class="profile" src="images/photo.png" alt="Profile Photo" />
@@ -63,191 +69,267 @@
         <div class="column-2">
           <h1 class="subtitle">About Me</h1>
           <p class="about-me-para">
-           Hi there! I am Dibesh, a passionate tech learner. I have had keen interest in designing and developing websites of all sorts and also wanting to gain for hands on knowledge about latest tech updates of my interest.
+            Hi there! I am Dibesh, a passionate tech learner. I have had keen
+            interest in designing and developing websites of all sorts and also
+            wanting to gain for hands on knowledge about latest tech updates of
+            my interest.
+          </p>
 
           <section class="tab">
-          <div class="tab-titles">
-            
-              <li class="tab-links active-link" onclick="tapChange('skills')">Skills</li>
-             <li class="tab-links" onclick="tapChange('exp')">Experience</li> 
-             <li class="tab-links" onclick="tapChange('edu')">Education</li> 
-          
-          </div>
-
-          <div class="tab-content">
-            <div class="tab-contents" id="skills">
-              <ul class="tab-inner-content">
-                <tr>
-                <li><span class="title">UI/UX</span><br />Sites Designing</li>
-                <li><span class="title">Web Dev</span><br />Building the design</li>
-                <li><span class="title">App Dev</span><br />App Development</li>
-              </ul>
+            <div class="tab-titles">
+              <li class="tab-links active-link" onclick="tapChange('skills')">
+                Skills
+              </li>
+              <li class="tab-links" onclick="tapChange('exp')">Experience</li>
+              <li class="tab-links" onclick="tapChange('edu')">Education</li>
             </div>
-            <div class="tab-contents" id="exp" style="opacity: 0; visibility: hidden;">
-              <ul class="tab-inner-content">
-                <li><span class="title">UI/UX</span><br />hackathon1</li>
-                <li><span class="title">Web Dev</span><br />hackathon2</li>
-                <li><span class="title">App Dev</span><br />hackathon3</li>
-              </ul>
+
+            <div class="tab-content">
+              <div class="tab-contents" id="skills">
+                <ul class="tab-inner-content">
+                  <tr>
+                    <li>
+                      <span class="title">UI/UX</span><br />Sites Designing
+                    </li>
+                    <li>
+                      <span class="title">Web Dev</span><br />Building the
+                      design
+                    </li>
+                    <li>
+                      <span class="title">App Dev</span><br />App Development
+                    </li>
+                  </tr>
+                </ul>
+              </div>
+              <div
+                class="tab-contents"
+                id="exp"
+                style="opacity: 0; visibility: hidden"
+              >
+                <ul class="tab-inner-content">
+                  <li><span class="title">UI/UX</span><br />hackathon1</li>
+                  <li><span class="title">Web Dev</span><br />hackathon2</li>
+                  <li><span class="title">App Dev</span><br />hackathon3</li>
+                </ul>
+              </div>
+              <div
+                class="tab-contents"
+                id="edu"
+                style="opacity: 0; visibility: hidden"
+              >
+                <ul class="tab-inner-content">
+                  <li>
+                    <span class="title"> Primary</span><br />
+                    Bhupu Shainik, Chirag , DEBHISS
+                  </li>
+                  <li>
+                    <span class="title">Secondary</span><br />Everest E.B.S.S
+                  </li>
+                  <li><span class="title">Higher</span><br />PNC-CSIT</li>
+                </ul>
+              </div>
             </div>
-            <div class="tab-contents" id="edu" style="opacity: 0; visibility: hidden;">
-              <ul class="tab-inner-content">
-                <li><span class="title"> Primary</span><br /> Bhupu Shainik, Chirag , DEBHISS</li>
-                <li><span class="title">Secondary</span><br />Everest E.B.S.S</li>
-                <li><span class="title">Higher</span><br />PNC-CSIT</li>
-              </ul>
-            </div>
-          </div>
-        </section>  
-
-      
-        </div>
-      </div>
-    
-  </div>
-
-
-
-
-  <!-- ------------ my services -----------s-->
-  <div id="services" class="services container">
-    <h1 class="subtitle">My Services</h1>
-    <div class="container-services">
-      <div class="service-lists">
-        <div class="content">
-          <h2>Web Design</h2>
-          <div class="hover-ko-lagi">
-            <p> Lately, i have been working on designing websites as a part of my hobby. Nothing sort of professional as of yet, just there somewhere starting out.</p>
-            <a class="more" href="#">Learn More.</a>
-          </div>
-        </div>
-        <div class="content">
-
-          <h2>Web Development</h2>
-          <div class="hover-ko-lagi">
-            <p>The cools designs that i get from my own and there on internet, i then try to develop a similar kind. I have found web design as something which is great thing to learn problem solving with. 
-            </p>
-            <a class="more" href="#">Learn More.</a>
-          </div>
-
-        </div>
-        <div class="content">
-          <h2>Game Development</h2>
-          <div class="hover-ko-lagi">
-            <p>After having been on the web design and development for a few times. I have interest in developing the games too. So for that 
-            </p>
-            <a class="more" href="#">Learn More.</a>
-          </div>
-
+          </section>
         </div>
       </div>
     </div>
-  </div>
 
-
-  <!-- --------------------Portfolio---------------------- -->
-  <div id="portfolio" class="port-main container">
-    <div class="port-container">
-      <div class="row-1">
-        <h1 class="subtitle">Portfolio</h1>
-      </div>
-      <div class="row-2">
-        <div class="port-content">
-          <img src="images/work-1.png" alt="image 1">
-          <div class="layer" data-aos="flip-left">
-            <h3>Social Media App</h3>
-            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            <a href=""><i class="fa-solid fa-link"></i></a>
+    <!-- ------------ my services -----------s-->
+    <div id="services" class="services container">
+      <h1 class="subtitle">My Services</h1>
+      <div class="container-services">
+        <div class="service-lists">
+          <div
+            class="content"
+            data-aos="fade-in"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-anchor-placement="top-center"
+          >
+            <h2>Web Design</h2>
+            <div class="hover-ko-lagi">
+              <p>
+                Lately, i have been working on designing websites as a part of
+                my hobby. Nothing sort of professional as of yet, just there
+                somewhere starting out.
+              </p>
+              <a class="more" href="#">Learn More.</a>
+            </div>
           </div>
-        </div>
-        <div class="port-content">
-          <img src="images/work-2.png" alt="image 2">
-          <div class="layer" data-aos="flip-left">
-            <h3>Music App</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum, in</p>
-            <a href=""><i class="fa-solid fa-link"></i></a>
+          <div class="content" 
+            data-aos="fade-in"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-anchor-placement="top-center">
+            <h2>Web Development</h2>
+            <div class="hover-ko-lagi">
+              <p>
+                The cools designs that i get from my own and there on internet,
+                i then try to develop a similar kind. I have found web design as
+                something which is great thing to learn problem solving with.
+              </p>
+              <a class="more" href="#">Learn More.</a>
+            </div>
           </div>
-        </div>
-        <div class="port-content">
-          <img src="images/work-3.png" alt="image 3">
-          <div class="layer" data-aos="flip-left">
-            <h3>Online Shopping App</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum, in</p>
-            <a href=""><i class="fa-solid fa-link"></i></a>
+          <div class="content"
+          data-aos="fade-in"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-anchor-placement="top-center">
+            <h2>Game Development</h2>
+            <div class="hover-ko-lagi">
+              <p>
+                After having been on the web design and development for a few
+                times. I have interest in developing the games too. So for that
+              </p>
+              <a class="more" href="#">Learn More.</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-
-
-  <!-- ---------------------contact me--------------- -->
-  <div id="contact" class="cont-main container">
-    <div class="container-contact">
-      <div class="contact-left">
-        <h1 class="cont-h1">Contact Me</h1>
-        <div class="innerdiv">
-          <div class="email">
-            <i class="fa-solid fa-envelope"></i>
-            <span style="padding-left: 15px;">sabinp7278@gmail.com</span>
+    <!-- --------------------Portfolio---------------------- -->
+    <div id="portfolio" class="port-main container">
+      <div class="port-container">
+        <div class="row-1">
+          <h1 class="subtitle">Portfolio</h1>
+        </div>
+        <div class="row-2">
+          <div class="port-content">
+            <img src="images/work-1.png" alt="image 1" />
+            <div
+              class="layer"
+              data-aos="flip-left"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-anchor-placement="top-center"
+            >
+              <h3>Social Media App</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <a href=""><i class="fa-solid fa-link"></i></a>
+            </div>
           </div>
-          <div class="number">
-            <i class="fa-solid fa-phone"></i> <span style="padding-left: 15px;">+9779849481842</span>
+          <div class="port-content">
+            <img src="images/work-2.png" alt="image 2" />
+            <div
+              class="layer"
+              data-aos="flip-left"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-anchor-placement="top-center"
+            >
+              <h3>Music App</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum,
+                in
+              </p>
+              <a href=""><i class="fa-solid fa-link"></i></a>
+            </div>
           </div>
-          <div class="socials">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-github"></i>
-          </div>
-          <div class="cv">
-            <a href="images/cv.pdf" download class="cv-botton">Download CV</a>
+          <div class="port-content">
+            <img src="images/work-3.png" alt="image 3" />
+            <div
+              class="layer"
+              data-aos="flip-left"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-anchor-placement="top-center"
+            >
+              <h3>Online Shopping App</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum,
+                in
+              </p>
+              <a href=""><i class="fa-solid fa-link"></i></a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="contact-right" autocomplete="off">
-        <form action="https://formspree.io/f/xnqeqlap" method="post">
-        <input class="input-name" type="text" placeholder="Your Name" name="name">
-        <input class="input-email"  type="email" placeholder="Your Email" name="name" >
-        <textarea name="message" class="message" cols="47" placeholder="Enter Message"></textarea>
-        <button class="submit-button" type="submit">Submit</button>
-      </form>
+    </div>
+
+    <!-- ---------------------contact me--------------- -->
+    <div id="contact" class="cont-main container">
+      <div class="container-contact">
+        <div class="contact-left">
+          <h1 class="cont-h1">Contact Me</h1>
+          <div class="innerdiv">
+            <div class="email">
+              <i class="fa-solid fa-envelope"></i>
+              <span style="padding-left: 15px">sabinp7278@gmail.com</span>
+            </div>
+            <div class="number">
+              <i class="fa-solid fa-phone"></i>
+              <span style="padding-left: 15px">+9779849481842</span>
+            </div>
+            <div class="socials">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-github"></i>
+            </div>
+            <div class="cv">
+              <a href="images/cv.pdf" download class="cv-botton">Download CV</a>
+            </div>
+          </div>
+        </div>
+        <div class="contact-right" autocomplete="off">
+          <form action="https://formspree.io/f/xnqeqlap" method="post">
+            <input
+              class="input-name"
+              type="text"
+              placeholder="Your Name"
+              name="name"
+            />
+            <input
+              class="input-email"
+              type="email"
+              placeholder="Your Email"
+              name="name"
+            />
+            <textarea
+              name="message"
+              class="message"
+              cols="47"
+              placeholder="Enter Message"
+            ></textarea>
+            <button class="submit-button" type="submit">Submit</button>
+          </form>
+        </div>
       </div>
     </div>
-  </div>
 
+    <!-- api -->
 
-<!-- api -->
+    <div class="apiWrap">
+      <span class="api"> </span>
+      <p id="quote"></p>
+    </div>
 
-<div class="apiWrap">
-  <span class="api">
-   
- </span>
- <p id="quote"></p>
- 
-</div>
+    <!-- ----------------footer----------------------- -->
 
-  <!-- ----------------footer----------------------- -->
+    <section class="footer">
+      <div class="footer-socials">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-github"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-x-twitter"></i>
+      </div>
 
+      <div class="foot-nav">
+        <li><a href="#">about</a></li>
+        <li><a href="#">services</a></li>
+        <li><a href="#">portfolio</a></li>
+      </div>
+    </section>
 
-<section class="footer">
-  <div class="footer-socials">
-    <i class="fa-brands fa-facebook"></i>
-    <i class="fa-brands fa-instagram"></i>
-    <i class="fa-brands fa-github"></i>
-    <i class="fa-brands fa-linkedin"></i>
-    <i class="fa-brands fa-x-twitter"></i>
-  </div>
-
-  <div class="foot-nav">
-          <li><a href="#">about</a></li>
-          <li><a href="#">services</a></li>
-          <li><a href="#">portfolio</a></li>
-  </div>
-</section>
-
-<div><button onclick="topFunction()" id="myBtn" title="Go to top">TOP</button></div>
+    <div>
+      <button onclick="topFunction()" id="myBtn" title="Go to top">TOP</button>
+    </div>
   </body>
-  <script src="./script.js" src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script src="AOS.js"></script>
+  <script src="./script.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </html>
