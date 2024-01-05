@@ -95,7 +95,7 @@ short.style.fontWeight="100";
 ) 
 
 
-
+ 
 //go to the top button
 // Get the button:
 let mybutton = document.getElementById("myBtn");
