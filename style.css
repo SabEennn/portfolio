@@ -1,6 +1,6 @@
 
  @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:wght@100&family=Space+Grotesk&display=swap');
-
+	@import 'aos/dist/aos.css';
 
 *{
 	background-color: #0000;
@@ -626,3 +626,4 @@ input:focus ,textarea:focus{
 	color: #ffffff7c;
 	margin: 5rem;
 }
+
