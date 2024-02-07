@@ -64,20 +64,12 @@ function show(){
 
 	tog.style.left="214px";
 	value = 0;
-
-} 
-
-// fetching the API
-// fetch(`https://type.fit/api/quotes`)
-// .then(()=>{
 	
-// })
-
-// .then(()=>{ 
-
+} 
+// const apiFetch =>
  fetch(`https://type.fit/api/quotes`)
 .then((r)=> r.json())
-.then ((j)=>{
+.then ((j)=>{	
 	
 
 	const short = document.getElementById("quote")
@@ -85,8 +77,8 @@ function show(){
 	const randomNumber = Math.floor(Math.random()*j.length)
 console.log(j[randomNumber].text);
 var varForQuote=j[randomNumber].text
- 
-document.getElementById("quote").innerHTML = '"  ' +varForQuote+ '  "';
+			
+short.innerHTML = '"  ' +varForQuote+ '  "';
 short.style.fontFamily = "Space Grotesk"; 
 short.style.color= "#757575";
 short.style.fontWeight="100";
@@ -104,7 +96,7 @@ let mybutton = document.getElementById("myBtn");
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20	) {
     mybutton.style.display = "block";
   } else {
     mybutton.style.display = "none";
